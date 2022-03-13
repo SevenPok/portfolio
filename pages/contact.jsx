@@ -4,7 +4,7 @@ import Layout from "../components/layouts/article";
 const Contact = () => {
   return (
     <Layout title={"Contact"}>
-      <Container>
+      <Container maxW="100%">
         <h1>Contact</h1>
       </Container>
     </Layout>
