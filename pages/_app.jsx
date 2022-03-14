@@ -1,4 +1,4 @@
-import Chakra from "../components/Chakra";
+import Chakra from "../components/chakra";
 import { AnimatePresence } from "framer-motion";
 import Layout from "../components/layouts/main";
 import Fonts from "../components/fonts";
