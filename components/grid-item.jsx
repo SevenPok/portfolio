@@ -1,6 +1,5 @@
-import { Box, LinkBox, LinkOverlay, Text } from '@chakra-ui/react'
+import { Box, Img, LinkBox, LinkOverlay, Text } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
-import Image from 'next/image'
 import NextLink from 'next/link'
 import { motion } from 'framer-motion'
 
@@ -8,7 +7,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => {
   return (
     <Box w="100%" textAlign="center">
       <LinkBox cursor="pointer">
-        <Image
+        <Img
           src={thumbnail}
           alt={title}
           className="grid-item-thumbnail"
@@ -37,7 +36,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail, path }) => {
       <Box w="100%" textAlign="center">
         <NextLink href={`/works/${id}`} scroll={false} passHref={path}>
           <LinkBox cursor="pointer" style={{ borderRadius: '12px' }}>
-            <Image
+            <Img
               src={thumbnail}
               alt={title}
               className="grid-item-thumbnail"

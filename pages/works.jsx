@@ -1,8 +1,7 @@
-import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
-import { WorkGridItem } from "../components/grid-item";
-import Layout from "../components/layouts/article";
-import Section from "../components/section";
-import tiendita from "../public/images/Work/TienditaLogin.jpg";
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { WorkGridItem } from '../components/grid-item'
+import Layout from '../components/layouts/article'
+import Section from '../components/section'
 
 const Works = () => {
   return (
@@ -13,14 +12,18 @@ const Works = () => {
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
-            <WorkGridItem id="tiendita" title="Tiendita" thumbnail={tiendita}>
+            <WorkGridItem
+              id="tiendita"
+              title="Tiendita"
+              thumbnail={'/images/Work/TienditaLogin.jpg'}
+            >
               It&apos;s a simple app to buy and sell products made with Java
             </WorkGridItem>
           </Section>
         </SimpleGrid>
       </Container>
     </Layout>
-  );
-};
+  )
+}
 
-export default Works;
+export default Works
