@@ -1,7 +1,7 @@
-import Link from "next/link";
-import { Text, useColorModeValue } from "@chakra-ui/react";
-import Image from "next/image";
-import styled from "@emotion/styled";
+import Link from 'next/link'
+import { Text, useColorModeValue } from '@chakra-ui/react'
+import Image from 'next/image'
+import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -17,17 +17,17 @@ const LogoBox = styled.span`
   &:hover img {
     transform: rotate(20deg);
   }
-`;
+`
 
 const Logo = () => {
-  const star = `/images/star.png`;
+  const star = `/images/star.png`
   return (
     <Link href="/" scroll={false}>
       <a>
         <LogoBox>
-          <Image src={star} width={20} height={20} alt="Logo" />
+          <Image src={star} width={20} height={20} alt="Logo" loading="lazy" />
           <Text
-            color={useColorModeValue("gray.800", "whiteAlpha.900")}
+            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily="M PLUS Rounded 1c, sans-serif"
             fontWeight="bold"
             fontSize="xl"
@@ -38,7 +38,7 @@ const Logo = () => {
         </LogoBox>
       </a>
     </Link>
-  );
-};
+  )
+}
 
-export default Logo;
+export default Logo

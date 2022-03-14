@@ -6,28 +6,29 @@ import {
   Link,
   List,
   ListItem,
-  useColorModeValue,
-} from "@chakra-ui/react";
-import { BioSection, BioYear } from "../components/bio";
-import Layout from "../components/layouts/article";
-import Section from "../components/section";
-import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
+  useColorModeValue
+} from '@chakra-ui/react'
+import { BioSection, BioYear } from '../components/bio'
+import Layout from '../components/layouts/article'
+import Section from '../components/section'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 const homePage = () => {
   return (
-    <Layout title={"Homepage"}>
+    <Layout title={'Homepage'}>
       <Container maxW="100%">
         <Box
           borderRadius="lg"
           mb={5}
+          mt={5}
           p={2.5}
           textAlign="center"
-          bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
+          bg={() => useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         >
           Hello world, I am a junior developer from Guatemala!
         </Box>
 
-        <Box display={{ md: "flex" }}>
+        <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
               Gerber Colindres
@@ -49,8 +50,7 @@ const homePage = () => {
             studying the 8th semester.
           </BioSection>
           <BioSection>
-            <BioYear>2022</BioYear>
-            I started to works as a freelance
+            <BioYear>2022</BioYear>I started to works as a freelance
           </BioSection>
         </Section>
 
@@ -88,7 +88,7 @@ const homePage = () => {
         </Section>
       </Container>
     </Layout>
-  );
-};
+  )
+}
 
-export default homePage;
+export default homePage
