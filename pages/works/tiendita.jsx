@@ -1,7 +1,7 @@
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Badge, Container, Link, List, ListItem } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
-import { Meta, Title, WorkImage } from '../../components/Work'
+import { Meta, Title, WorkImage } from '../../components/work'
 
 const Tiendita = () => {
   return (
