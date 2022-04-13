@@ -6,7 +6,7 @@ import Section from '../components/section'
 const Works = () => {
   return (
     <Layout title="Works">
-      <Container maxW="100%">
+      <Container maxW="container.md">
         <Heading as="h3" fontSize={20} mt={4} mb={4}>
           Works
         </Heading>
