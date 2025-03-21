@@ -20,6 +20,17 @@ const Works = () => {
               It&apos;s a simple app to buy and sell products made with Java
             </WorkGridItem>
           </Section>
+          <Section>
+            <WorkGridItem
+              id="alquifiestas"
+              title="Alquifiestas"
+              thumbnail={'/images/Work/Alquifiestas01.jpeg'}
+            >
+              Alquifiestas is a desktop application that allows you to manage
+              your store and your customers. where you can create products,
+              offer discounts and view your inventory.
+            </WorkGridItem>
+          </Section>
         </SimpleGrid>
       </Container>
     </Layout>
